@@ -1,0 +1,62 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+
+.navbar{
+    background-color: rgb(38, 38, 38);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    color: white;
+    position: fixed;
+    width: 100%;
+    height: 5rem;
+}
+
+.lefth{
+    font-size: x-large;
+    font-weight: bold;
+}
+
+.righth{
+    width: 150px;
+    display: flex;
+    justify-content: space-between;
+    font-size: large;
+    
+}
+
+.righth a{
+    color: white;
+}
+
+.bod{
+    padding-top: 5rem;
+}
+
+.banner{
+    background-color: lightgray;
+    padding: 8%;
+    display: flex;
+    align-items: center;
+    font-size: x-large;
+    font-weight: bold;
+    gap: 5px;
+}
+
+.social{
+    background-color: lightgray;
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.abt{
+    padding-inline: 10%;
+    align-items: center;
+    background-color: lightgray;
+}
