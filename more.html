@@ -4,19 +4,41 @@
         <link rel="icon" type="image/png" href="logo.png">
         <title>Salam's Portfolio</title>
         <link rel="stylesheet" href="./style.css">
-    </head>
+    </head style="background-color: lightgray;">
     <body>
         <div class="navbar">
-            <div class="lefth">
-                <img src="./logo.png" style="width: 3%">
-                <span>Abdus Salam Tasnim</span>
+                <div class="lefth">
+                    <img src="./logo.png" style="width: 25px">
+                    <span>Abdus Salam Tasnim</span>
+                </div>
+                <div>
+                    <nav>
+                        <ul class="sidebar">
+                            <li onclick=hide() style="font-family: Arial, Helvetica, sans-serif;"><a href="#" ><b>X</b></a></li>
+                            <li><a href="./index.html" >Home</a></li>
+                            <li><a href="./about.html" style="font-weight: bold">About</a></li>
+                            <li><a href="./more.html" >More</a></li>
+                        </ul>
+                        <ul>
+                            <li class="mobile"><a href="./index.html" >Home</a></li>
+                            <li class="mobile"><a href="./about.html" style="font-weight: bold">About</a></li>
+                            <li class="mobile"><a href="./more.html" >More</a></li>
+                            <li onclick=bar() class="onmobile"><a href="#" >Menu</a></li>
+                        </ul>
+                    </nav>
+                </div>
             </div>
-            <div class="righth">
-                <a href="./index.html" >Home</a>
-                <a href="./about.html" style="font-weight: bold">About</a>
-                <a href="./more.html" >More</a>
-            </div>
-        </div>
+
+            <script>
+                function bar(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'flex'
+                }
+                function hide(){
+                    const sidebar = document.querySelector('.sidebar')
+                    sidebar.style.display = 'none'
+                }
+            </script>
 
 		<div class="social">
                     <a href="https://www.linkedin.com/in/abduabdussalamtasnim/" target="_blank" style="width: 32px; height: 32px; margin: 6px;"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/960px-LinkedIn_logo_initials.png" style="width: 32px; height: 32px; border-radius: 16px;"></a>
